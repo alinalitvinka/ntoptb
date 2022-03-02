@@ -1,10 +1,11 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   border: none;
   outline: none;
@@ -14,9 +15,15 @@
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   width: calc(100% - 400px);
 }
@@ -28,9 +35,15 @@
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 800px;
   height: 100%;
 }
@@ -72,39 +85,13 @@
 }
 
 .white_circuit {
-  text-shadow: 
-		-0   -2px 1px #FFFFFF,
-		 0   -2px 1px #FFFFFF,
-		-0    2px 1px #FFFFFF,
-		 0    2px 1px #FFFFFF,
-		-2px -0   1px #FFFFFF,
-		 2px -0   1px #FFFFFF,
-		-2px  0   1px #FFFFFF,
-		 2px  0   1px #FFFFFF,
-		-1px -2px 1px #FFFFFF,
-		 1px -2px 1px #FFFFFF,
-		-1px  2px 1px #FFFFFF,
-		 1px  2px 1px #FFFFFF,
-		-2px -1px 1px #FFFFFF,
-		 2px -1px 1px #FFFFFF,
-		-2px  1px 1px #FFFFFF,
-		 2px  1px 1px #FFFFFF,
-		-2px -2px 1px #FFFFFF,
-		 2px -2px 1px #FFFFFF,
-		-2px  2px 1px #FFFFFF,
-		 2px  2px 1px #FFFFFF,
-		-2px -2px 1px #FFFFFF,
-		 2px -2px 1px #FFFFFF,
-		-2px  2px 1px #FFFFFF,
-		 2px  2px 1px #FFFFFF;
+  text-shadow: -0   -2px 1px #FFFFFF, 0   -2px 1px #FFFFFF, -0    2px 1px #FFFFFF, 0    2px 1px #FFFFFF, -2px -0   1px #FFFFFF, 2px -0   1px #FFFFFF, -2px  0   1px #FFFFFF, 2px  0   1px #FFFFFF, -1px -2px 1px #FFFFFF, 1px -2px 1px #FFFFFF, -1px  2px 1px #FFFFFF, 1px  2px 1px #FFFFFF, -2px -1px 1px #FFFFFF, 2px -1px 1px #FFFFFF, -2px  1px 1px #FFFFFF, 2px  1px 1px #FFFFFF, -2px -2px 1px #FFFFFF, 2px -2px 1px #FFFFFF, -2px  2px 1px #FFFFFF, 2px  2px 1px #FFFFFF, -2px -2px 1px #FFFFFF, 2px -2px 1px #FFFFFF, -2px  2px 1px #FFFFFF, 2px  2px 1px #FFFFFF;
 }
-
-
-
 
 @font-face {
   font-family: "Proxima Nova Black";
-  src: url("/assets/ofont.ru_Proxima\ Nova.ttf") format("truetype");
+  src: url("/assets/ofont.ru_Proxima Nova.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
-  } 
+}
+/*# sourceMappingURL=style.css.map */
