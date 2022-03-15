@@ -42,7 +42,7 @@
   display: block;
   width: 130px;
   height: 130px;
-  background-image: url("assets/лого.png");
+  background-image: url("../../assets/лого.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -175,50 +175,42 @@
   }
 }
 
-.slider_main {
+.main {
+  display: grid;
+}
+
+.main_header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
   width: 100%;
-  height: 600px;
-  //box-shadow: 0 0 5px rgba(148, 147, 135, 0.5);
+  background-color: #ececec;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  & .wrapper {
+    width: calc(100% - 700px);
+    flex-direction: column;
+    align-items: flex-start;
+
+    & div, h2 {
+      margin-top: 15px;
+    }
+  }
 }
 
-.swiper-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.slide {
-  height: 100%;
-}
-
-.slide1 {
+.nav_list {
+  margin-left: 350px;
+  width: 300px;
+  height: 400px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.31) 50%, rgba(0, 0, 0, 0.31) 100%), url("assets/article_01_img_02.jpg") no-repeat no-repeat;
-  background-size: cover;
-  background-position-y: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.slide2 {
-  display: none;
-}
-
-.slide3 {
-  display: none;
-}
-
-.motto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 700px;
-  height: 200px;
-  border: 7px solid #FFFFFF;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  font-size: 44px;
-  font-weight: 700;
-  color: #FFFFFF;
+h2 {
+  margin-bottom: 15px;
 }
 
 

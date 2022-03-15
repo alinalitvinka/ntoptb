@@ -1,4 +1,4 @@
-const swiperMain = new Swiper('.slider_main', {
+const swiperMain = new Swiper('.swiper-wrapper', {
 
     loop: true,
     speed: 400,
