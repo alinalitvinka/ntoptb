@@ -143,7 +143,7 @@
 }
 
 .menu.wrapper {
-  width: calc(100% - 700px);
+  width: calc(100% - 400px);
 }
 
 .menu_list {
@@ -178,7 +178,7 @@
   grid-column-end: 3;
   -ms-grid-row: 1;
       grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 2;
   width: 100%;
   background-color: #ececec;
   margin-top: 10px;
@@ -186,7 +186,7 @@
 }
 
 .main_header .wrapper {
-  width: calc(100% - 700px);
+  width: calc(100% - 400px);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -201,7 +201,13 @@
 }
 
 .nav_list {
-  margin-left: 350px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: 200px;
   width: 300px;
   height: 400px;
   display: -webkit-box;
@@ -211,12 +217,184 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_link {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 7px;
+  border: 1px solid #e9e9e9;
+}
+
+.nav_link:hover {
+  cursor: pointer;
+}
+
+.nav_link.active {
+  background-color: #973636;
+  color: #ffffff;
+  border: none;
 }
 
 h2 {
   margin-bottom: 15px;
+}
+
+.service_cards {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px 30px;
+  width: calc(100% - 100px);
+  padding-left: 30px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  height: 320px;
+}
+
+.card_title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #973636;
+}
+
+.card_subtitle {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.card_image1 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_1.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image2_1 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/montazh_vodogrejnih_kotlov.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image2 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_2.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image2_2 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/parovoy kotel.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image3 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_3.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image2_3 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/kotel_utilizator.jfif") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image4 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_4.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image5 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_5.png") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image6 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_6.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image7 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_7.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image8 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_8.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image9 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_9.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image10 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_10.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image11 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_11.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image12 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_12.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.card_image13 {
+  width: 100%;
+  height: 170px;
+  background: url("../../assets/cards/1_13.jpg") no-repeat no-repeat;
+  background-size: cover;
 }
 
 @font-face {
