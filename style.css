@@ -9,7 +9,7 @@
   transition: 0.3s;
   border: none;
   outline: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto, Arial", sans-serif;
   font-style: normal;
   text-decoration: none;
   list-style-type: none;
@@ -32,10 +32,9 @@
 
 .header {
   width: 100%;
-  height: 150px;
-  background: url("/assets/black-skin-gad78869c1_1920.jpg");
-  background: url("/assets/black-g446a17c84_1920.jpg");
-  background-size: cover;
+  height: 110px;
+  background: #414141;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -48,14 +47,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 650px;
+  width: 550px;
   height: 100%;
 }
 
 .logo_image {
   display: block;
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   background-image: url("assets/лого.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -65,7 +64,7 @@
 .logo_title {
   display: block;
   text-align: center;
-  width: 500px;
+  width: 400px;
   height: 170px;
   font-family: 'Proxima Nova Black', sans-serif;
 }
@@ -75,7 +74,7 @@
   margin-top: 50px;
   font-family: 'Proxima Nova Black', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   color: #af1e22;
 }
 
@@ -84,7 +83,7 @@
   margin-top: 15px;
   font-family: 'Proxima Nova Black', sans-serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   color: #221f1f;
 }
 
@@ -106,11 +105,6 @@
   width: 220px;
   height: 50px;
   color: #ffffff;
-  /*text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
-               0px 5px 5px rgba(255, 255, 255, 1),
-               5px 0px 5px rgba(255, 255, 255, 1),
-               -5px 0px 5px rgba(255, 255, 255, 1),
-               0px -5px 5px rgba(255, 255, 255, 1);*/
 }
 
 .adress span {
@@ -130,11 +124,6 @@
   width: 210px;
   height: 85px;
   color: #ffffff;
-  /*text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
-               0px 5px 5px rgba(255, 255, 255, 1),
-               5px 0px 5px rgba(255, 255, 255, 1),
-               -5px 0px 5px rgba(255, 255, 255, 1),
-               0px -5px 5px rgba(255, 255, 255, 1);*/
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -145,16 +134,8 @@
   margin-left: 4px;
 }
 
-.navigation {
-  width: 100%;
-  height: 50px;
-  background: #000000;
-  -webkit-box-shadow: 0 -4px 10px black;
-          box-shadow: 0 -4px 10px black;
-}
-
-.menu.wrapper {
-  width: calc(100% - 700px);
+.menu {
+  width: 50%;
 }
 
 .menu_list {
@@ -172,15 +153,42 @@
 }
 
 .menu_list li > a {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   color: #ffffff;
 }
 
+.about_us {
+  width: 670px;
+  margin-top: 55px;
+  margin-left: 150px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  text-indent: 1.5em;
+  /* Отступ первой строки */
+  text-align: justify;
+  /* Выравнивание по ширине */
+}
+
+p {
+  font-size: 20px;
+  margin-top: 5px;
+  text-indent: 1.5em;
+  /* Отступ первой строки */
+}
+
+.bold {
+  font-weight: 600;
+}
+
 .slider_main {
   width: 100%;
   height: 600px;
+  overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -190,9 +198,6 @@
 
 .slide {
   height: 100%;
-}
-
-.slide1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,18 +207,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(1.5%, rgba(0, 0, 0, 0.31)), to(rgba(0, 0, 0, 0.31))), url("assets/article_01_img_02.jpg") no-repeat no-repeat;
-  background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.31) 1.5%, rgba(0, 0, 0, 0.31) 100%), url("assets/article_01_img_02.jpg") no-repeat no-repeat;
+}
+
+.slide1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(0.5%, rgba(0, 0, 0, 0.61)), to(rgba(0, 0, 0, 0.61))), url("assets/article_01_img_02.jpg") no-repeat no-repeat;
+  background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("assets/article_01_img_02.jpg") no-repeat no-repeat;
   background-size: cover;
   background-position-y: center;
 }
 
 .slide2 {
-  display: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(0.5%, rgba(0, 0, 0, 0.51)), to(rgba(0, 0, 0, 0.51))), url("assets/factory-g5c954d237_1920.jpg") no-repeat no-repeat;
+  background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.51) 0.5%, rgba(0, 0, 0, 0.51) 100%), url("assets/factory-g5c954d237_1920.jpg") no-repeat no-repeat;
+  background-size: cover;
+  background-position-y: center;
 }
 
 .slide3 {
-  display: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(0.5%, rgba(0, 0, 0, 0.61)), to(rgba(0, 0, 0, 0.61))), url("assets/photo.jpg") no-repeat no-repeat;
+  background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("assets/photo.jpg") no-repeat no-repeat;
+  background-size: cover;
+  background-position-y: center;
 }
 
 .motto {
