@@ -158,22 +158,42 @@
 }
 
 .about_us {
-  width: 670px;
-  margin-top: 55px;
-  margin-left: 150px;
-  margin-bottom: 60px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(100% - 400px);
+  margin-bottom: 55px;
+
+  & div {
+    width: calc(50% - 45px);
+  }
+
+  & div:nth-child(1) {
+    margin-top: 33px;
+  }
 }
 
 h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 60px;
+  //text-indent: 1.5em; /* Отступ первой строки */
+  //text-align: justify; /* Выравнивание по ширине */
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 800;
   margin-bottom: 15px;
-  text-indent: 1.5em; /* Отступ первой строки */
-  text-align: justify; /* Выравнивание по ширине */
+  margin-top: 22px;
 }
 
 p {
   font-size: 20px;
   margin-top: 5px;
-  text-indent: 1.5em; /* Отступ первой строки */
+  //text-indent: 1.5em; /* Отступ первой строки */
   //text-align: justify; /* Выравнивание по ширине */
 }
 
@@ -182,6 +202,7 @@ p {
 }
 
 .slider_main {
+  position: relative;
   width: 100%;
   height: 600px;
   overflow: hidden;
