@@ -15,6 +15,13 @@
   list-style-type: none;
 }
 
+.background_wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(73, 73, 73, 0.42)), to(rgba(73, 73, 73, 0.42))), url("assets/factory-g5c954d237_1920.jpg") no-repeat no-repeat;
+  background: linear-gradient(rgba(73, 73, 73, 0.42), rgba(73, 73, 73, 0.42)), url("assets/factory-g5c954d237_1920.jpg") no-repeat no-repeat;
+  background-size: 100%;
+  background-position-x: center;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,15 +33,18 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: calc(100% - 150px);
+  width: calc(100% - 200px);
   margin: 0 auto;
 }
 
 .header {
   width: 100%;
   height: 110px;
-  background: #414141;
   margin-bottom: 20px;
+}
+
+.header .wrapper {
+  width: calc(100% - 200px);
 }
 
 .logo {
@@ -159,6 +169,51 @@
   color: #ffffff;
 }
 
+.startscreen_content {
+  width: 100%;
+  height: 670px;
+}
+
+.startscreen_content .wrapper {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.startscreen_content h2 {
+  width: 65%;
+  text-align: left;
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.startscreen_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 55px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #af1e22;
+  cursor: pointer;
+}
+
 .about_us {
   margin: 0 auto;
   display: -webkit-box;
@@ -177,7 +232,7 @@
   width: calc(50% - 35px);
 }
 
-h2 {
+.title {
   font-size: 30px;
   text-align: center;
   margin-bottom: 45px;
