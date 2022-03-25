@@ -15,7 +15,7 @@
 }
 
 .background_wrapper {
-  background: linear-gradient(rgba(73, 73, 73, 0.42), rgba(73, 73, 73, 0.42)), url("assets/factory-g5c954d237_1920.jpg") no-repeat no-repeat;
+  background: linear-gradient(rgba(54, 54, 54, 0.52), rgba(56, 56, 56, 0.52)), url("assets/factory-g5c954d237_1920.jpg") no-repeat no-repeat;
   background-size: 100%;
   background-position-x: center;
 }
@@ -112,42 +112,6 @@
 		 2px  2px 1px #FFFFFF;
 }
 
-.adress {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 220px;
-  height: 50px;
-  color: #ffffff;
-
-  & span {
-    font-size: 16px;
-    font-weight: 700;
-    color: #ffffff;
-  }
-
-  & span:nth-child(3) {
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #af1e22;
-    margin-top: 7px;
-  }
-}
-
-.contacts {
-  width: 210px;
-  height: 85px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-
-  & span {
-    color: #ffffff;
-    margin-left: 4px;
-  }
-}
-
 .menu {
   width: 50%;
 }
@@ -167,6 +131,10 @@
   }
 }
 
+.menu_link:hover {
+  text-shadow: 4px 4px 5px rgba(255, 255, 255, 0.7);
+}
+
 .startscreen_content {
   width: 100%;
   height: 670px;
@@ -175,17 +143,27 @@
     height: 100%;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: unset;
     padding-top: 100px;
     padding-bottom: 130px;
   }
+}
 
-  & h2 {
-    width: 65%;
-    text-align: left;
-    font-size: 50px;
-    color: #ffffff;
-    font-weight: 400;
-  }
+.startscreen_title {
+  width: 75%;
+  text-align: left;
+  font-size: 70px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.startscreen_subtitle {
+  width: 55%;
+  text-align: left;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 30px;
 }
 
 .startscreen_button {
@@ -198,10 +176,11 @@
   font-size: 20px;
   color: #ffffff;
   background-color: #af1e22;
+  margin-top: 120px;
   cursor: pointer;
 }
 
-.about_us {
+.services {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -215,10 +194,12 @@
 }
 
 .title {
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 35px;
   text-align: center;
   margin-bottom: 45px;
   margin-top: 60px;
+  letter-spacing: 0.5px;
   //text-indent: 1.5em; /* Отступ первой строки */
   //text-align: justify; /* Выравнивание по ширине */
 }
@@ -234,8 +215,6 @@ p {
   font-size: 18px;
   font-weight: 300;
   margin-top: 5px;
-  //text-indent: 1.5em; /* Отступ первой строки */
-  //text-align: justify; /* Выравнивание по ширине */
 }
 
 .slider_main {
@@ -287,6 +266,51 @@ p {
   font-size: 44px;
   font-weight: 700;
   color: #FFFFFF;
+}
+
+
+.contacts {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+.contacts_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #221f1f;
+  height: 450px;
+}
+
+h4 {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 13px;
+}
+
+#map {
+  width: 750px;
+  height: 450px;
+  background: url("assets/map.jpg") no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  width: 100%;
+  height: 55px;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #af1e22;
+
+  & .wrapper {
+    justify-content: center;
+  }
+
+  & span {
+    font-size: 14px;
+  }
 }
 
 

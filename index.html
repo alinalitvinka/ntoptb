@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ООО НТО Промтехбезопасность</title>
+  <title>НТО Промтехбезопасность</title>
   <link rel="stylesheet"  href="style.css">
   <link rel="icon" href="assets/лого.ico">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="background_wrapper">
@@ -26,25 +27,26 @@
         <nav class="menu">
           <ul class="menu_list">
             <li class="menu_list_item"><a class="menu_link">Главная</a></li>
-            <li class="menu_list_item"><a href="pages/services" class="menu_link">Услуги</a></li>
+            <li class="menu_list_item"><a href="#services" class="menu_link">Услуги</a></li> <!--pages/services-->
             <li class="menu_list_item"><a class="menu_link">Библиотека</a></li>
             <li class="menu_list_item"><a class="menu_link">Компания</a></li>
-            <li class="menu_list_item"><a class="menu_link">Контакты</a></li>
+            <li class="menu_list_item"><a href="#contacts" class="menu_link">Контакты</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <div class="startscreen_content">
       <div class="wrapper">
-        <h2>Оказываем услуги в области промышленной безопасности в части грузоподъемного оборудования и оборудования, работающего под избыточным давлением.</h2>
-        <a class="startscreen_button">Подробнее</a>
+        <h2 class="startscreen_title">Оказываем услуги в области промышленной безопасности</h2>
+        <p class="startscreen_subtitle">в части грузоподъемного оборудования и оборудования, работающего под избыточным давлением.</p>
+        <a class="startscreen_button" href="#services">Подробнее</a>
       </div>
     </div>
   </div>
-  <main class="main">
+  <main class="main"  id="services">
     
     <h2 class="title">Наши услуги</h2>
-    <div class="about_us">
+    <div class="services">
       <div>
         <h3>Техническое диагностирование и неразрушающий контроль</h3>
         <p>потенциально опасных объектов и эксплуатируемых на них технических устройств:</p>
@@ -96,27 +98,41 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    
+    <div class="contacts" id="contacts">
+      <h2 class="title">Контакты</h2>
+      <div class="wrapper">
+        <div class="contacts_content">
+          <h4>Адрес:</h4>
+          <span>220007, г.Минск</span>
+          <span>ул.Володько, 20, пом.10</span>
+          <h4>Телефоны:</h4>
+          <span>тел +375 (17) 396-02-79</span>
+          <span>факс +375 (17) 257-13-51</span>
+          <h4>Электронная почта:</h4>
+          <span>ntoptb@mail.ru</span>
+          <h4>Время работы:</h4>
+          <span>понедельник - четверг: 8.30 - 17.00</span>
+          <span>пятница: 8.30 - 16.00</span>
+          <h4>Реквизиты:</h4>
+          <span>р/с BY14PJCB30120528791000000933</span>
+          <span>BIC банка PJCBBY2X</span>
+          <span>в ЦБУ 100 г. Минск ОАО «Приорбанк»,</span>
+          <span>Адрес банка: г. Минск, ул. Радиальная, 38А</span>
+          <span>УНП: 191338827</span>
+          <span>ОКПО: 379654945000</span>
+          <span>Директор Денис Анатольевич Емельянов</span>
+          <span>Действует на основании Устава</span>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="wrapper">
-      
+      <span>© ООО "НТО Промтехбезопасность", 2022</span>
     </div>
   </footer>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
-<!--<div class="adress">
-        <span>220007, г.Минск</span>
-        <span>ул.Володько, 20, пом.10</span>
-        <span>Время работы</span>
-        <span>ПН-ВТ: 8.30-17.00</span>
-        <span>ПТ: 8.30-16.00</span>
-      </div>
-      <div class="contacts">
-        тел <span>+375 (17) 396-02-79</span>
-        факс <span>+375 (17) 257-13-51</span>
-        e-mail <span>ntoptb@mail.ru</span>
-      </div>-->
