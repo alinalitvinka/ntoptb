@@ -227,16 +227,44 @@ h2 {
   margin-bottom: 15px;
 }
 
+h3 {
+  margin-bottom: 20px;
+}
+
 .about_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  height: 600px;
+  height: 500px;
   padding-top: 50px;
   padding-left: 100px;
   padding-right: 100px;
   margin-bottom: 50px;
 }
 
+.about_section .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .about_content {
+  display: -ms-grid;
+  display: grid;
+  color: #221f1f;
+}
+
+.left_column {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.history {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,24 +272,33 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: #221f1f;
-  height: 450px;
-}
-
-.history {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 140px;
   margin-top: 20px;
   border-left: 5px solid #A20000;
   font-size: 16px;
   padding-left: 15px;
 }
 
-#map {
-  width: 750px;
-  height: 450px;
-  background: url("../../assets/map.jpg") no-repeat;
+.map {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  width: calc(416px*1.2);
+  height: calc(312px*1.2);
+  background: url("../../assets/volodko.jfif") no-repeat;
   background-size: cover;
+}
+
+.width100 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .footer {
