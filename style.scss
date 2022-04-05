@@ -185,7 +185,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: calc(100% - 800px);
+  width: calc(100% - 400px);
   margin-bottom: 55px;
 
   & div {
@@ -204,11 +204,78 @@
   //text-align: justify; /* Выравнивание по ширине */
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFFFFF;
+  width: 350px;
+  height: 240px;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  &:hover h3 {
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 5px #ffffff;
+  }
+}
+
+.tech_diagnostika {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("/assets/photo.jpg") no-repeat;
+  background-size: cover;
+}
+
+.card2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("/assets/02.jpg") no-repeat;
+  background-size: cover;
+}
+
+.card3 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("/assets/3.jpg") no-repeat;
+  background-size: cover;
+}
+
+.card4 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("/assets/cards/montazh_vodogrejnih_kotlov.jpg") no-repeat;
+  background-size: cover;
+}
+
+.card5 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("/assets/proektirovanie.jpg") no-repeat;
+  background-size: cover;
+}
+
+.card6 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("/assets/dymovye_truby.jpg") no-repeat;
+  background-size: cover;
+}
+
+.card7 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("/assets/vosstanovlenie-dokumentacii.jpg") no-repeat;
+  background-size: cover;
+}
+
+.card8 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("/assets/osobennosti_sovremennoj_antikorrozionnoj_zashchity_obektov_1-1024x695-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+.card9 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.61) 0.5%, rgba(0, 0, 0, 0.61) 100%), url("/assets/modernizaciya.jpg") no-repeat;
+  background-size: cover;
+}
+
 h3 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 84%;
+  height: 78%;
+  font-size: 20px;
+  line-height: 1.3em;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-left: 20px;
 }
 
 p {
