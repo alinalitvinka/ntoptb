@@ -1,7 +1,11 @@
 const swiperMain = new Swiper('.slider_main', {
 
     loop: true,
-    speed: 400,
+    speed: 800,
+    autoplay: {
+      delay: 5500,
+      disableOnInteraction: false,
+    },
   
     pagination: {
       el: '.swiper-pagination',
@@ -13,3 +17,18 @@ const swiperMain = new Swiper('.slider_main', {
       nextEl: '.swiper-button-next'
     },
   });
+
+const swiperOtzyvy = new Swiper('.otzyvy_slider', {
+
+  loop: true,
+  speed: 800,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});

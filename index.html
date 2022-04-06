@@ -29,7 +29,7 @@
             <li class="menu_list_item"><a class="menu_link">Главная</a></li>
             <li class="menu_list_item"><a href="pages/ob-organizatsii" class="menu_link">Об организации</a></li>
             <li class="menu_list_item"><a href="pages/services" class="menu_link">Услуги</a></li> <!--pages/services-->
-            <li class="menu_list_item"><a class="menu_link"></a></li>
+            <li class="menu_list_item"><a href="pages/otzyvy" class="menu_link">Отзывы</a></li>
             <li class="menu_list_item"><a href="pages/contacts" class="menu_link">Контакты</a></li>
           </ul>
         </nav>
@@ -39,7 +39,7 @@
       <div class="wrapper">
         <h2 class="startscreen_title">Оказываем услуги в области промышленной безопасности</h2>
         <p class="startscreen_subtitle">в части грузоподъемного оборудования и оборудования, работающего под избыточным давлением.</p>
-        <a class="startscreen_button" href="#services">Подробнее</a>
+        <a class="startscreen_button button" href="#services">Подробнее</a>
       </div>
     </div>
   </div>
@@ -99,21 +99,30 @@
     <div class="otzyvy_section">
       <div class="wrapper">
         <h2 class="title">Отзывы наших клиентов</h2>
-        <div class="otzyvy_slider_wrapper">
-          <div class="slide otzyv1"></div>
-          <div class="slide otzyv2"></div>
-          <div class="slide otzyv3"></div>
-          <div class="slide otzyv4"></div>
-          <div class="slide otzyv5"></div>
-          <div class="slide otzyv6"></div>
-          <div class="slide otzyv7"></div>
-          <div class="slide otzyv8"></div>
-          <div class="slide otzyv9"></div>
-          <div class="slide otzyv10"></div>
+        <div class="swiper otzyvy_slider">
+          <div class="swiper-wrapper">
+            <div class="otzyvy_slide otzyv1 swiper-slide">
+              <img src="assets/otzyvy/otvyv1.jpg" alt="otzyv">
+              <img src="assets/otzyvy/otvyv2.jpg" alt="otzyv">
+              <img src="assets/otzyvy/otvyv3.jpg" alt="otzyv">
+              <img src="assets/otzyvy/otvyv4.jpg" alt="otzyv">
+            </div>
+            <div class="otzyvy_slide otzyv2 swiper-slide">
+              <img src="assets/otzyvy/otvyv5.jpg" alt="otzyv">
+              <img src="assets/otzyvy/otvyv6.jpg" alt="otzyv">
+              <img src="assets/otzyvy/otvyv7.jpg" alt="otzyv">
+              <img src="assets/otzyvy/otvyv8.jpg" alt="otzyv">
+            </div>
+            <div class="otzyvy_slide otzyv3 swiper-slide">
+              <img src="assets/otzyvy/otvyv9.jpg" alt="otzyv">
+              <img src="assets/otzyvy/otvyv10.jpg" alt="otzyv">
+              <img src="assets/otzyvy/otvyv3.jpg" alt="otzyv">
+              <img src="assets/otzyvy/otvyv6.jpg" alt="otzyv">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <a class="otzyvy_button button">Все отзывы</a>
       </div>
     </div>
   </main>
