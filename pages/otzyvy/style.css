@@ -32,9 +32,7 @@
 
 .header {
   width: 100%;
-  height: 150px;
-  background: url("assets/background-g18b4642a3_1920.jpg") no-repeat no-repeat;
-  background-size: cover;
+  height: 95px;
 }
 
 .logo {
@@ -47,14 +45,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 650px;
+  width: 500px;
   height: 100%;
 }
 
 .logo_image {
   display: block;
-  width: 130px;
-  height: 130px;
+  width: 90px;
+  height: 90px;
   background-image: url("../../assets/лого.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -64,71 +62,51 @@
 .logo_title {
   display: block;
   text-align: center;
-  width: 500px;
-  height: 170px;
+  width: 420px;
+  height: 150px;
   font-family: 'Proxima Nova Black', sans-serif;
 }
 
 .red {
   display: block;
-  margin-top: 50px;
+  margin-top: 48px;
   font-family: 'Proxima Nova Black', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   color: #af1e22;
 }
 
 .black {
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
   font-family: 'Proxima Nova Black', sans-serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 20px;
   color: #221f1f;
 }
 
-.white_circuit {
-  text-shadow: -0   -2px 1px #FFFFFF, 0   -2px 1px #FFFFFF, -0    2px 1px #FFFFFF, 0    2px 1px #FFFFFF, -2px -0   1px #FFFFFF, 2px -0   1px #FFFFFF, -2px  0   1px #FFFFFF, 2px  0   1px #FFFFFF, -1px -2px 1px #FFFFFF, 1px -2px 1px #FFFFFF, -1px  2px 1px #FFFFFF, 1px  2px 1px #FFFFFF, -2px -1px 1px #FFFFFF, 2px -1px 1px #FFFFFF, -2px  1px 1px #FFFFFF, 2px  1px 1px #FFFFFF, -2px -2px 1px #FFFFFF, 2px -2px 1px #FFFFFF, -2px  2px 1px #FFFFFF, 2px  2px 1px #FFFFFF, -2px -2px 1px #FFFFFF, 2px -2px 1px #FFFFFF, -2px  2px 1px #FFFFFF, 2px  2px 1px #FFFFFF;
-}
-
 .adress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 220px;
-  height: 135px;
+  width: 180px;
+  height: 45px;
+  line-height: 25px;
   color: #af1e22;
   text-shadow: 0px 0px 5px white, 0px 5px 5px white, 5px 0px 5px white, -5px 0px 5px white, 0px -5px 5px white;
 }
 
 .adress span {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: #221f1f;
 }
 
-.adress span:nth-child(3) {
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #af1e22;
-  margin-top: 7px;
-}
-
 .contacts {
-  width: 210px;
-  height: 85px;
+  width: 180px;
+  height: 75px;
   color: #af1e22;
   text-shadow: 0px 0px 5px white, 0px 5px 5px white, 5px 0px 5px white, -5px 0px 5px white, 0px -5px 5px white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .contacts span {
@@ -138,7 +116,7 @@
 
 .navigation {
   width: 100%;
-  height: 50px;
+  height: 45px;
   background: #973636;
 }
 
@@ -157,7 +135,7 @@
 }
 
 .menu_list li > a {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   color: #ffffff;
@@ -171,7 +149,6 @@
 }
 
 .main_header .wrapper {
-  width: calc(100% - 400px);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -185,41 +162,8 @@
   margin-top: 15px;
 }
 
-.nav_list {
-  margin-left: 200px;
-  width: 300px;
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.nav_link {
-  display: block;
-  width: 100%;
-  height: 50px;
-  padding: 7px;
-  border: 1px solid #e9e9e9;
-}
-
-.nav_link:hover {
-  cursor: pointer;
-}
-
-.nav_link.active {
-  background-color: #973636;
-  color: #ffffff;
-  border: none;
-}
-
 h2 {
+  font-size: 22px;
   margin-bottom: 15px;
 }
 
