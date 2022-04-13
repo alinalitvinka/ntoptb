@@ -332,6 +332,24 @@ h3 {
   font-size: 14px;
 }
 
+.service {
+  width: 100%;
+}
+
+.service .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.chek_mark {
+  width: 20px;
+  height: 20px;
+  background: url("../../assets/icons8-галочка.svg") no-repeat;
+  background-size: 20px 20px;
+}
+
 @font-face {
   font-family: "Proxima Nova Black";
   src: url("assets/ofont.ru_Proxima Nova.ttf") format("truetype");
